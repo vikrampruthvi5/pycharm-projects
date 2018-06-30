@@ -43,3 +43,4 @@ print(players)
 players.reverse()   # Reverse contents of list
 # Can also be written as list.reverse(players)
 print(players)
+
