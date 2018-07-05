@@ -7,7 +7,7 @@ gpio.setmode(gpio.BOARD)
 
 laser = 38
 
-gpio.setup(led, gpio.OUT)
+gpio.setup(laser, gpio.OUT)
 
 while True:
     gpio.output(laser, 1)

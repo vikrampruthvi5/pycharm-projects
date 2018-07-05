@@ -5,7 +5,7 @@ import time
 
 gpio.setmode(gpio.BOARD)
 
-led = 6
+led = 40
 
 gpio.setup(led, gpio.OUT)
 
@@ -13,4 +13,4 @@ while True:
     gpio.output(led, 1)
     time.sleep(1)
     gpio.output(led, 0)
-    time.sleep(0)
+    time.sleep(1)
