@@ -13,4 +13,4 @@ while True:
     gpio.output(laser, 1)
     time.sleep(1)
     gpio.output(laser, 0)
-    time.sleep(0)
+    time.sleep(1)
