@@ -1,3 +1,4 @@
+import PROJECTS.Misc.Weather_report
 import tkinter as tk
 
 root = tk.Tk()
@@ -20,15 +21,13 @@ class weather_pane:
         header.pack()
 
     def top_grid(self):
-        print(self.root)
-
         top = tk.Frame(bg="#013243")
         tk.Label(top, text="City: ", cnf={"bg": "#013243", "fg": "White"}).grid(row=0, column=0)
         tk.Entry(top,  cnf={"bg": "#013243", "fg": "White"}).grid(row=0, column=1)
         tk.Label(top, cnf=self.design).grid(row=1, column=0)
         # Button
-        print(tk.Button.keys(self))
         tk.Button(top, text="Find weather", cnf={'width':'25', 'highlightbackground':'#013243', 'activebackground':'#013243'}).grid(row=1, column=0, columnspan=2)
+        print("Button Clicked")
         top.pack()
 
     def footer(self):
@@ -36,6 +35,10 @@ class weather_pane:
         tk.Label(footer, text="Live Weather Report", cnf={"bg": "#013243", "fg": "orange", 'font':("Helvetica", 30)}).grid(row=0, column=0)
         tk.Label(footer, cnf=self.design).grid(row=1, column=0)
         footer.pack()
+
+    def get_weather_data(self):
+        print("Hello World!")
+
 
 
 # Window configuration

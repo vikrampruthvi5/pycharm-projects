@@ -1,6 +1,3 @@
-
-import requests as req
-
 class weather_report:
 
     def __init__(self, city):
