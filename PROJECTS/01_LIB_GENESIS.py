@@ -3,7 +3,6 @@ Goal is to use requests and bs4 to get the list of books and to be able to downl
 """
 
 # imports
-import requests
 from bs4 import BeautifulSoup as bs
 
 # Global variables
